@@ -1,0 +1,83 @@
+body{
+    overflow: hidden;
+    height:100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(139, 222, 13, 0.591);
+}
+.container{
+    border:1px solid grey;
+    padding:1rem 3rem 3rem 3rem;
+    border-radius: 15px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
+h1{
+    margin:0;
+}
+p{
+    margin:0;
+    font-size:20px;
+}
+#userInput{
+    margin:20px 0 10px 0;
+    height:3rem;
+}
+#Amount{
+    height:1.3rem;
+    border:1px solid grey;
+}
+.from-to{
+    display: flex;
+    margin: 10px 0 10px 0;
+    gap:10px;
+}
+#from,#to{
+    width:50%;
+}
+#fromCountryImage,#ToCountryImage{
+    height:70px;
+    width:65px;
+}
+.imageAndDropdown{
+    display: flex;
+    border:1px solid grey;
+    border-radius: 15px;
+}
+#dropdownFromCountry,#dropdownToCountry{
+    height:30px;
+    align-self:center;
+    background-color:transparent;
+    border:none;
+    cursor: pointer;
+}
+#dropdownFromCountry:focus,#dropdownToCountry:focus{
+    outline:none;
+}
+/* #dropdownFromCountry:focus + #fromCountryImage{
+    background-color: red;
+} */
+ #Amount:active #userInput{
+    background-color: rebeccapurple;
+ }
+#displayResult{
+    background-color: white;
+    height:35px;
+    display: flex;
+    align-items: center;
+    border:1px solid grey;
+    font-size:20px;
+    padding-left:20px;
+    border-radius: 10px;
+    margin:10px 0 20px 0;
+}
+button{
+    align-self: center;
+    height:2rem;
+    border-radius: 10px;
+    font-size: 15px;
+    cursor: pointer;
+}

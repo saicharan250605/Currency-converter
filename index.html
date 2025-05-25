@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="currency.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <form>
+            <h1 tabindex="0">Currency Converter</h1>
+            <div id="userInput">
+                <p>Enter Amount</p>
+                <input type="number" name="Amount" id="Amount">
+            </div>
+            <div class="from-to">
+                <div id="from">
+                    <p>From</p>
+                    <div class="imageAndDropdown">
+                        <div id="fromCountryImage">
+                        </div>
+                        <select id="dropdownFromCountry">
+                        </select>
+                    </div>
+                </div>
+                <i id="swap" class="fa-solid fa-arrow-right-arrow-left" style="align-self: center;font-size:22px;cursor:pointer; "></i>
+                <div id="to">
+                    <p>To</p>
+                    <div class="imageAndDropdown" >
+                        <div id="ToCountryImage">
+                        </div>
+                        <select id="dropdownToCountry">
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div id="displayResult">1USD = 80INR</div>
+            <button type="submit">Get Exchange Rate</button>
+        </form>
+    </div>
+    <script src="CurrencyCode.js"></script>
+    <script src="currency.js"></script>
+</body>
+</html>
